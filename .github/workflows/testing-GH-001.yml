@@ -3,7 +3,6 @@ name: CI
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
     branches: [ "main" ]
 
@@ -15,10 +14,13 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     runs-on: ubuntu-latest
-    
+    env:
+          SONAR_TOKEN: Qwerty123456
+        
     steps:
-      - name: "Prueba de concepto; primer GH"
+      - name: "Prueba de concepto; Primer GH"
         run: echo "Primer GH - " date
-   
-
- 
+      
+      - name: "Prueba con secretos & variables de entorno"
+        run: echo "env 'sonar :' $SONAR_TOKEN"
+      
