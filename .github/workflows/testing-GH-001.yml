@@ -18,17 +18,17 @@ jobs:
           vataible01: Qwerty123456
           vataible02: "soy batman"
           vataible03: "123487"
-          vataible04: 7654321
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
         
     steps:
       - name: "Prueba de concepto; Primer GH"
-        run: echo "Primer GH - " date
+        run: echo "Primer GH - " ${{date}}
       
       - name: "Prueba con secretos & variables de entorno"
         run: | 
           echo "01 : ${{env.vataible01}}"
           echo "02 : ${{env.vataible02}}"
           echo "03 : ${{env.vataible03}}"
-          echo "04 : ${{env.vataible04}}"
+          echo "04 : ${{GITHUB_TOKEN}}"
       
