@@ -23,7 +23,7 @@ jobs:
         
     steps:
       - name: "Prueba de concepto; Primer GH"
-        run: echo "Primer GH - " ${{date}}
+        run: echo "Primer GH - xxxxxxx "
       
       - name: "Prueba con secretos & variables de entorno"
         run: | 
