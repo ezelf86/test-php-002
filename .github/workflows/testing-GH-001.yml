@@ -30,5 +30,5 @@ jobs:
           echo "01 : ${{env.vataible01}}"
           echo "02 : ${{env.vataible02}}"
           echo "03 : ${{env.vataible03}}"
-          echo "04 : ${{GITHUB_TOKEN}}"
+          echo "04 : ${{QWERTY}}"
       
