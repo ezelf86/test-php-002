@@ -18,7 +18,7 @@ jobs:
           vataible01: Qwerty123456
           vataible02: "soy batman"
           vataible03: "123487"
-          GITHUB_TOKEN: ${{ env }}
+          QWERTY: ${{ env }}
           
         
     steps:
